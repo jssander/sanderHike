@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayoutFragment"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <fragment
+        android:id="@+id/map2"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/orangeCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/whiteCircleButton"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/violetCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_orange_circle" />
+
+    <ImageButton
+        android:id="@+id/whiteCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/orangeCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_white_circle" />
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:text="Direction"
+        android:layout_below="@+id/my_toolbar"/>
+
+    <TextView
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/currentLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/direction"
+        android:background="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+        android:elevation="7dp"
+        app:srcCompat="@mipmap/ic_up_arrow_red" />
+
+    <ImageButton
+        android:id="@+id/mainCirclesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/direction"
+        android:background="@mipmap/ic_white_circle"
+        android:contextClickable="true"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_main_circles" />
+
+    <ImageButton
+        android:id="@+id/blackCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/mainCirclesButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_black_circle" />
+
+    <ImageButton
+        android:id="@+id/redCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/blackCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_red_circle" />
+
+    <ImageButton
+        android:id="@+id/blueCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/redCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_blue_circle" />
+
+    <ImageButton
+        android:id="@+id/greenCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/blueCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:elevation="0dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_green_circle" />
+
+    <ImageButton
+        android:id="@+id/yellowCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/greenCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_yellow_circle" />
+
+    <ImageButton
+        android:id="@+id/violetCircleButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/direction"
+        android:layout_toEndOf="@+id/yellowCircleButton"
+        android:background="@drawable/cast_ic_expanded_controller_play"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_violet_circle" />
+
+    <TextView
+        android:id="@+id/textScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomText"
+        android:layout_centerHorizontal="true" />
+
+    <!--<Button-->
+        <!--android:id="@+id/SelectMarkers"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Select Markers"-->
+        <!--android:layout_marginStart="11dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentStart="true" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonSave"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Save"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/SelectMarkers" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonLoad"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Load"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_toEndOf="@+id/buttonSave" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/text1"-->
+    <!--android:text="test"-->
+    <!--android:textStyle="bold"-->
+    <!--android:textColor="#ff00ff"-->
+    <!--&lt;!&ndash;android:background="#00ff00"&ndash;&gt;-->
+    <!--android:textColorHighlight="#000000"-->
+    <!--android:textIsSelectable="true" />-->
+
+
+</RelativeLayout>
