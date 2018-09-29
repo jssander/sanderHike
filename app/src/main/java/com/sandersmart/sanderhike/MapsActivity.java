@@ -111,6 +111,8 @@ import java.util.Queue;
 import static java.lang.Math.PI;
 import static java.lang.Math.abs;
 
+// sanderHike by Jeffrey Sander
+
 public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback, SensorEventListener, GoogleMap.OnMarkerClickListener {
 
     private GoogleMap mMap;
